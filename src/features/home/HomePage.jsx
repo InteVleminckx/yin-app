@@ -5,13 +5,20 @@ export default function HomePage() {
   const navigate = useNavigate();
 
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex-1 flex flex-col justify-around">
+        
         <Button onClick={() => navigate("/")}>
-            Home
+            Nieuw Spel
         </Button>
-        <Button onClick={() => navigate("/settings")}>
-            Settings
-        </Button>
+
+        <div className="flex flex-col gap-4">
+            <Button onClick={() => navigate("/settings")}>
+                Alle Spelers
+            </Button>
+            <Button onClick={() => navigate("/settings")}>
+                Alle Spellen 
+            </Button>
+        </div>
     </div>
   );
 }
