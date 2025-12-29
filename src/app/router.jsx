@@ -8,6 +8,7 @@ export function AppRouter() {
             <AppLayout>
                 <Routes>
                     <Route path="/" element={<HomePage/>}/>
+                    <Route path="/settings" element={<HomePage/>}/>
                 </Routes>
             </AppLayout>
         </HashRouter>
